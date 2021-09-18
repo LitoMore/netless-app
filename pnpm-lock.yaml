@@ -37,7 +37,7 @@ importers:
       '@netless/window-manager': 1.0.0-canary.47_white-web-sdk@2.16.24
       '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.3
       '@tsconfig/svelte': 3.0.0
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
       '@types/randomcolor': 0.5.6
       '@types/rollup-plugin-peer-deps-external': 2.2.1
       '@typescript-eslint/eslint-plugin': 5.30.6_2vt5mtrqleafs33qg2bhpmbaqm
@@ -182,11 +182,13 @@ importers:
       '@monaco-editor/loader': ^1.2.0
       '@netless/app-shared': workspace:*
       '@netless/y': ^0.1.4
+      '@types/pako': ^1.0.2
       '@types/randomcolor': ^0.5.6
       debounce-fn: ^5.1.0
       js-base64: ^3.7.2
       lib0: ^0.2.42
       monaco-editor: ^0.29.1
+      pako: ^2.0.4
       randomcolor: ^0.6.2
       side-effect-manager: ^1.1.1
       yjs: 13.5.13
@@ -194,11 +196,13 @@ importers:
       '@monaco-editor/loader': 1.2.0_monaco-editor@0.29.1
       '@netless/app-shared': link:../app-shared
       '@netless/y': 0.1.4_yjs@13.5.13
+      '@types/pako': 1.0.2
       '@types/randomcolor': 0.5.6
       debounce-fn: 5.1.0
       js-base64: 3.7.2
       lib0: 0.2.42
       monaco-editor: 0.29.1
+      pako: 2.0.4
       randomcolor: 0.6.2
       side-effect-manager: 1.1.1
       yjs: 13.5.13
@@ -271,7 +275,7 @@ importers:
     dependencies:
       antd: 4.22.1_sfoxds7t5ydpegc3knd667wn6m
       clsx: 1.2.1
-      daisyui: 2.20.0_6qxuh3ctkxhae7jnbdaexscv2m
+      daisyui: 2.22.0_6qxuh3ctkxhae7jnbdaexscv2m
       dayjs: 1.11.4
       preact: 10.7.3
       react: 17.0.2
@@ -1002,10 +1006,10 @@ packages:
       '@commitlint/execute-rule': 16.2.1
       '@commitlint/resolve-extends': 16.2.1
       '@commitlint/types': 16.2.1
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.2_2zqz24ol5yhbv2blv4fh7akzrq
+      cosmiconfig-typescript-loader: 2.0.2_tdn3ypgnfy6bmey2q4hu5jonwi
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.7.4
@@ -1525,12 +1529,16 @@ packages:
     resolution: {integrity: sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==}
     dev: true
 
-  /@types/node/18.0.4:
-    resolution: {integrity: sha512-M0+G6V0Y4YV8cqzHssZpaNCqvYwlCiulmm0PwpNLF55r/+cT8Ol42CHRU1SEaYFH2rTwiiE1aYg/2g2rrtGdPA==}
+  /@types/node/18.0.6:
+    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/pako/1.0.2:
+    resolution: {integrity: sha512-8UJl2MjkqqS6ncpLZqRZ5LmGiFBkbYxocD4e4jmBqGvfRG1RS23gKsBQbdtV9O9GvRyjFTiRHRByjSlKCLlmZw==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1573,7 +1581,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
     dev: true
 
   /@types/retry/0.12.0:
@@ -1583,7 +1591,7 @@ packages:
   /@types/rollup-plugin-peer-deps-external/2.2.1:
     resolution: {integrity: sha512-CUK4Mi3M3A/0coRUeo4McvUFOxR5H6UYd6Wt3D+K4c4fJupolMSoIxsZaBG1g/BJQOaujf78Pf7KhgfhrX1FZA==}
     dependencies:
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
       rollup: 0.63.5
     dev: true
 
@@ -1986,7 +1994,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.3
-      caniuse-lite: 1.0.30001373
+      caniuse-lite: 1.0.30001374
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2076,8 +2084,8 @@ packages:
   /caniuse-lite/1.0.30001372:
     resolution: {integrity: sha512-tBgBhIXBIqORB9ieUEYBKRfSlaF6YPq7WNNqcreF6Cl24UKNGIvE5/rP59dOGN6TRIS/5zOMHAMSRrVNmifWWw==}
 
-  /caniuse-lite/1.0.30001373:
-    resolution: {integrity: sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==}
+  /caniuse-lite/1.0.30001374:
+    resolution: {integrity: sha512-mWvzatRx3w+j5wx/mpFN5v5twlPrabG8NqX2c6e45LCpymdoGqNvRkRutFUqpRTXKFQFNQJasvK0YT7suW6/Hw==}
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -2254,16 +2262,16 @@ packages:
     requiresBuild: true
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.2_2zqz24ol5yhbv2blv4fh7akzrq:
+  /cosmiconfig-typescript-loader/2.0.2_tdn3ypgnfy6bmey2q4hu5jonwi:
     resolution: {integrity: sha512-KmE+bMjWMXJbkWCeY4FJX/npHuZPNr9XF9q9CIQ/bpFwi1qHfCmSiKarrCcRa0LO4fWjk93pVoeRtJAkTGcYNw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
       cosmiconfig: 7.0.1
-      ts-node: 10.9.0_2zqz24ol5yhbv2blv4fh7akzrq
+      ts-node: 10.9.0_tdn3ypgnfy6bmey2q4hu5jonwi
       typescript: 4.7.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -2341,8 +2349,8 @@ packages:
     resolution: {integrity: sha512-TO4VLh0/420Y/9dO3+f9abDEFYeCUr2WZRlxJvbp4HPTQcSylXNiL6yZa9FIUvV1yRiFufl1bszTCLDqv9PWNA==}
     dev: false
 
-  /daisyui/2.20.0_6qxuh3ctkxhae7jnbdaexscv2m:
-    resolution: {integrity: sha512-97xFBWQOXV/JCVRrGI5xranElKMmXIajDxojTQ1qoYwcWlkfFE7hY4D/NyHVIzlQb+B4xbiXhVPJM7EleRAY8g==}
+  /daisyui/2.22.0_6qxuh3ctkxhae7jnbdaexscv2m:
+    resolution: {integrity: sha512-H08aQP+Mfl2fQOmyaxd1NP54gQbr2xRUj2MmFFvfJ5EDGbthVBICDMNFKyia/zBfR58G8eTJo3CmydglM81/7Q==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -4017,6 +4025,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /pako/2.0.4:
+    resolution: {integrity: sha512-v8tweI900AUkZN6heMU/4Uy4cXRc2AYNRggVmTR+dEncawDJgCdLMximOVA2p4qO57WMynangsfGRb5WD6L1Bg==}
+    dev: true
+
   /parchment/1.1.4:
     resolution: {integrity: sha512-J5FBQt/pM2inLzg4hEWmzQx/8h8D0CiDxaG3vyp9rKrQRSDgBlhjdP5jQGgosEajXPSQouXGHOmVdgo7QmJuOg==}
     dev: true
@@ -4237,7 +4249,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 18.0.4
+      '@types/node': 18.0.0
       long: 4.0.0
     dev: true
 
@@ -5567,7 +5579,7 @@ packages:
     hasBin: true
     dependencies:
       '@types/estree': 0.0.39
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
     dev: true
 
   /rollup/2.76.0:
@@ -5927,7 +5939,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.0_2zqz24ol5yhbv2blv4fh7akzrq:
+  /ts-node/10.9.0_tdn3ypgnfy6bmey2q4hu5jonwi:
     resolution: {integrity: sha512-bunW18GUyaCSYRev4DPf4SQpom3pWH29wKl0sDk5zE7ze19RImEVhCW7K4v3hHKkUyfWotU08ToE2RS+Y49aug==}
     hasBin: true
     peerDependencies:
@@ -5946,7 +5958,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.0.4
+      '@types/node': 18.0.6
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3
